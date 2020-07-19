@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog App</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <section class="container">
+        <h1>50 Random Dog Pic</h1>
+        <form>
+            <label for="dogPics">Number of dog pictures (1-50): </label>
+            <input type="number" id="dogPics" min="1" max="50" value="3">
+            <input type="submit" value="Get dog pics">
+        </form>
+        <section class="results hidden">
+            <h2>Many Dogo Pics</h2>
+            <div class="results-img"></div>
+        </section>
+    </section class="container">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
