@@ -7,6 +7,7 @@ function getDogImages() {
 
 function displayResults(responseJson) {
     numberOfPics = $('#dogPics').val()
+    console.log(responseJson);
     for (let i = 0; i < numberOfPics; i++) {
         $('.results-img').append(`<img src="${responseJson.message[i]}" class="results-img">`)
         $('.results').removeClass('hidden');
